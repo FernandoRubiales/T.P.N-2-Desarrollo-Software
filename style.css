@@ -1,0 +1,176 @@
+.body {
+    background-color: rgb(234, 235, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+section {
+    margin: 50px 60px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 0.4rem;
+}
+
+.subtitulo {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    
+}
+
+.texto-section-1-0{
+
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 20px;
+    background-color: rgb(109, 108, 108);
+    padding: 30px;
+    margin: 0px;
+}
+
+
+.texto-section-2-0 {
+    text-decoration: underline;
+    text-transform: capitalize;
+    background-color: white;
+    padding: 10px;
+
+
+}
+
+.blockquote-section-2-0 {
+    background-color: rgb(235, 234, 234);
+    padding: 10px;
+    margin: 0px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: left;
+}
+
+
+.div-3-1 {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.4rem ;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 4px 4px 10px 1px black;
+}
+
+.div-3-2 {
+    background-color: rgb(235, 233, 122);
+    border: 1px solid black;
+    border-radius: 0.4rem ;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 3px 5px 4px 6px black;
+}
+
+
+.relativo {
+    position: relative;
+    background-color: rgb(174, 240, 240);
+    left: 0%;
+    padding: 1px;
+    top: 0%;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    margin: 1px;
+}
+
+.absoluto {
+    position:absolute;
+    background-color: rgb(38, 122, 122);
+    padding: 1px;
+    left: 50%;
+    top: 70%;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: rgb(75, 188, 223);
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 0.4s;
+    margin: 30px;
+}
+
+.animacion:hover {
+    cursor: pointer;
+    background-color: rgb(217, 255, 0);
+}
+
+.mover {
+    width: 100px;       
+    height: 100px;      
+    border-radius: 50%;
+    background-color: blueviolet;
+    animation: mover 2s infinite;
+}
+
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        background-color: #8b7c8f; 
+    }
+
+    .texto-section-1-0 {
+        font-size: 14px;
+    }
+
+    .section-1-0 {
+        width: 95%; 
+        padding: 6px;
+        
+    }
+    .section-2-0 {
+        width: 95%; 
+        padding: 6px; 
+    }
+    .section-3-0 {
+        width: 95%; 
+        padding: 6px; 
+    }
+    .section-4-0 {
+        width: 95%; 
+        padding: 6px; 
+    }
+    .section-5-0 {
+        width: 95%; 
+        padding: 6px; 
+    }
+}
+
